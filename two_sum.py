@@ -22,6 +22,7 @@ def two_sum_v1(array, target):
     """
     for indice, value in enumerate(array):
         second_value = target - value
+        # Complexity of in is O(n). https://stackoverflow.com/questions/13884177/complexity-of-in-operator-in-python
         if second_value in array:
             return [indice, array.index(second_value)]
     else:
